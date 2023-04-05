@@ -132,7 +132,7 @@ func main() {
 					for _, y := range v {
 						num = int(y - 32) //la position correspondant au caractère selon le tableau de caractères dans vinc
 						if num > 95 {
-							return
+							continue
 						} else {
 							result = append(result, vinc[num])
 						}
